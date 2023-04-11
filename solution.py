@@ -6,5 +6,5 @@ chat_id = 440047378
 
 def solution(x: np.array, y: np.array) -> bool:
     alpha = 0.09
-    p = ttest_ind(x, y, equal_var=False).pvalue
+    p = ttest_ind(x, y, equal_var=True).pvalue
     return p < alpha
